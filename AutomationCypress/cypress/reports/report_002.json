@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-01-18T06:54:44.423Z",
+    "end": "2023-01-18T06:55:08.077Z",
+    "duration": 23654,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c0b1ffb5-7fb5-4af6-9d9e-0e87cd603740",
+      "title": "",
+      "fullFile": "cypress/e2e/cogmentoapp/Google.spec.cy.js",
+      "file": "cypress/e2e/cogmentoapp/Google.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b9dfb28a-c0b1-45ff-b6e4-0e6f40498b81",
+          "title": "Google App",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Title Test",
+              "fullTitle": "Google App Title Test",
+              "timedOut": null,
+              "duration": 6213,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.google.co.in/');\ncy.title().should('eq', 'Google');",
+              "err": {},
+              "uuid": "7c849364-e0de-4a57-84ee-687cb51c2baa",
+              "parentUUID": "b9dfb28a-c0b1-45ff-b6e4-0e6f40498b81",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Background Test",
+              "fullTitle": "Google App Background Test",
+              "timedOut": null,
+              "duration": 13261,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.google.co.in/');\ncy.get(\"input[aria-label='Google Search']\").should('have.css', 'background-color').and('eq', 'rgb(48, 49, 52)');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected 'rgb(248, 249, 250)' to equal 'rgb(48, 49, 52)'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected 'rgb(248, 249, 250)' to equal 'rgb(48, 49, 52)'\n    at Context.eval (https://www.google.co.in/__cypress/tests?p=cypress/e2e/cogmentoapp/Google.spec.cy.js:106:88)",
+                "diff": "- 'rgb(248, 249, 250)'\n+ 'rgb(48, 49, 52)'\n"
+              },
+              "uuid": "34741b95-f9bf-40fa-bd0b-4ba65bcd86df",
+              "parentUUID": "b9dfb28a-c0b1-45ff-b6e4-0e6f40498b81",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7c849364-e0de-4a57-84ee-687cb51c2baa"
+          ],
+          "failures": [
+            "34741b95-f9bf-40fa-bd0b-4ba65bcd86df"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 19474,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

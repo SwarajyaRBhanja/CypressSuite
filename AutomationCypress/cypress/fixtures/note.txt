@@ -1,0 +1,18 @@
+
+
+mochawesome report generation:
+
+npm install --save-dev mochawesome
+npm i --save-dev cypress-mochawesome-reporter 
+npm install mochawesome-merge --save-dev
+npm install -g mochawesome-report-generator
+
+overwrite-> if true all the previous report will be gone after new test run
+
+npm run execution_report----> final report will be generated
+
+****************************************************
+
+
+
+

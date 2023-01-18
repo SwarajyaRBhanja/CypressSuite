@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-01-18T06:54:01.141Z",
+    "end": "2023-01-18T06:54:31.449Z",
+    "duration": 30308,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2914ae38-8cfa-4dee-b503-6393af7f0237",
+      "title": "",
+      "fullFile": "cypress/e2e/cogmentoapp/Facebook.spec.cy.js",
+      "file": "cypress/e2e/cogmentoapp/Facebook.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8bb959c3-b54f-40e7-acbd-1c6d298fc104",
+          "title": "Facebook App",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Title Test",
+              "fullTitle": "Facebook App Title Test",
+              "timedOut": null,
+              "duration": 13476,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.facebook.com/');\ncy.title().should('eq', 'Facebook – log in or sign up');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected 'Facebook' to equal 'Facebook – log in or sign up'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected 'Facebook' to equal 'Facebook – log in or sign up'\n    at Context.eval (https://www.facebook.com/__cypress/tests?p=cypress/e2e/cogmentoapp/Facebook.spec.cy.js:102:16)",
+                "diff": "- 'Facebook'\n+ 'Facebook – log in or sign up'\n"
+              },
+              "uuid": "5473ee70-a674-4309-9b6c-b1ef07accf3f",
+              "parentUUID": "8bb959c3-b54f-40e7-acbd-1c6d298fc104",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Background Test",
+              "fullTitle": "Facebook App Background Test",
+              "timedOut": null,
+              "duration": 12398,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.facebook.com/');\ncy.get(\"button[data-testid='royal_login_button']\").should('have.css', 'background-color').and('eq', 'rgb(24, 119, 242)');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button[data-testid='royal_login_button']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button[data-testid='royal_login_button']`, but never found it.\n    at Context.eval (https://www.facebook.com/__cypress/tests?p=cypress/e2e/cogmentoapp/Facebook.spec.cy.js:106:56)",
+                "diff": null
+              },
+              "uuid": "71f951cf-0411-489c-8c1d-57e9efded3ab",
+              "parentUUID": "8bb959c3-b54f-40e7-acbd-1c6d298fc104",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5473ee70-a674-4309-9b6c-b1ef07accf3f",
+            "71f951cf-0411-489c-8c1d-57e9efded3ab"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 25874,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

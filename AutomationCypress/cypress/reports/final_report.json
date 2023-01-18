@@ -1,0 +1,375 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 8,
+    "passes": 4,
+    "pending": 0,
+    "failures": 4,
+    "start": "2023-01-18T06:54:01.141Z",
+    "end": "2023-01-18T06:56:43.732Z",
+    "duration": 107965,
+    "testsRegistered": 8,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2914ae38-8cfa-4dee-b503-6393af7f0237",
+      "title": "",
+      "fullFile": "cypress/e2e/cogmentoapp/Facebook.spec.cy.js",
+      "file": "cypress/e2e/cogmentoapp/Facebook.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8bb959c3-b54f-40e7-acbd-1c6d298fc104",
+          "title": "Facebook App",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Title Test",
+              "fullTitle": "Facebook App Title Test",
+              "timedOut": null,
+              "duration": 13476,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.facebook.com/');\ncy.title().should('eq', 'Facebook – log in or sign up');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected 'Facebook' to equal 'Facebook – log in or sign up'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected 'Facebook' to equal 'Facebook – log in or sign up'\n    at Context.eval (https://www.facebook.com/__cypress/tests?p=cypress/e2e/cogmentoapp/Facebook.spec.cy.js:102:16)",
+                "diff": "- 'Facebook'\n+ 'Facebook – log in or sign up'\n"
+              },
+              "uuid": "5473ee70-a674-4309-9b6c-b1ef07accf3f",
+              "parentUUID": "8bb959c3-b54f-40e7-acbd-1c6d298fc104",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Background Test",
+              "fullTitle": "Facebook App Background Test",
+              "timedOut": null,
+              "duration": 12398,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.facebook.com/');\ncy.get(\"button[data-testid='royal_login_button']\").should('have.css', 'background-color').and('eq', 'rgb(24, 119, 242)');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button[data-testid='royal_login_button']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button[data-testid='royal_login_button']`, but never found it.\n    at Context.eval (https://www.facebook.com/__cypress/tests?p=cypress/e2e/cogmentoapp/Facebook.spec.cy.js:106:56)",
+                "diff": null
+              },
+              "uuid": "71f951cf-0411-489c-8c1d-57e9efded3ab",
+              "parentUUID": "8bb959c3-b54f-40e7-acbd-1c6d298fc104",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5473ee70-a674-4309-9b6c-b1ef07accf3f",
+            "71f951cf-0411-489c-8c1d-57e9efded3ab"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 25874,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c0b1ffb5-7fb5-4af6-9d9e-0e87cd603740",
+      "title": "",
+      "fullFile": "cypress/e2e/cogmentoapp/Google.spec.cy.js",
+      "file": "cypress/e2e/cogmentoapp/Google.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b9dfb28a-c0b1-45ff-b6e4-0e6f40498b81",
+          "title": "Google App",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Title Test",
+              "fullTitle": "Google App Title Test",
+              "timedOut": null,
+              "duration": 6213,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.google.co.in/');\ncy.title().should('eq', 'Google');",
+              "err": {},
+              "uuid": "7c849364-e0de-4a57-84ee-687cb51c2baa",
+              "parentUUID": "b9dfb28a-c0b1-45ff-b6e4-0e6f40498b81",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Background Test",
+              "fullTitle": "Google App Background Test",
+              "timedOut": null,
+              "duration": 13261,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.google.co.in/');\ncy.get(\"input[aria-label='Google Search']\").should('have.css', 'background-color').and('eq', 'rgb(48, 49, 52)');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected 'rgb(248, 249, 250)' to equal 'rgb(48, 49, 52)'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected 'rgb(248, 249, 250)' to equal 'rgb(48, 49, 52)'\n    at Context.eval (https://www.google.co.in/__cypress/tests?p=cypress/e2e/cogmentoapp/Google.spec.cy.js:106:88)",
+                "diff": "- 'rgb(248, 249, 250)'\n+ 'rgb(48, 49, 52)'\n"
+              },
+              "uuid": "34741b95-f9bf-40fa-bd0b-4ba65bcd86df",
+              "parentUUID": "b9dfb28a-c0b1-45ff-b6e4-0e6f40498b81",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7c849364-e0de-4a57-84ee-687cb51c2baa"
+          ],
+          "failures": [
+            "34741b95-f9bf-40fa-bd0b-4ba65bcd86df"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 19474,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "53fb38aa-012b-4160-9068-1e441cf8ea3f",
+      "title": "",
+      "fullFile": "cypress/e2e/cogmentoapp/HomePage.spec.cy.js",
+      "file": "cypress/e2e/cogmentoapp/HomePage.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2df57f24-1a42-4f10-9d3f-d887ea86ed5b",
+          "title": "HomePage Verification",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify homepage url",
+              "fullTitle": "HomePage Verification verify homepage url",
+              "timedOut": null,
+              "duration": 32477,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage = loginPage.loginCogmento();\ncy.wait(10000);\ncy.xpath(\"//i[@class='home icon']\").click();\ncy.url().should('be.equals', `${_data.default.loginUrl}home`);\nconsole.log(cy.title());",
+              "err": {},
+              "uuid": "ec2fc78b-73fc-49e5-a558-6e38f74322dd",
+              "parentUUID": "2df57f24-1a42-4f10-9d3f-d887ea86ed5b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify title",
+              "fullTitle": "HomePage Verification verify title",
+              "timedOut": null,
+              "duration": 147,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('eq', 'Cogmento CRM');",
+              "err": {},
+              "uuid": "8f4ae015-f912-47ff-809b-42547df778d1",
+              "parentUUID": "2df57f24-1a42-4f10-9d3f-d887ea86ed5b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check mouse hover",
+              "fullTitle": "HomePage Verification check mouse hover",
+              "timedOut": null,
+              "duration": 11134,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//ExecutionHelper.mouseHover(cy.xpath('//i[@class=\"calendar icon\"]'))\n//ExecutionHelper.realMouseHover(cy.xpath('//i[@class=\"calendar icon\"]'))\ncy.contains('Calendar').trigger('mouseover');\ncy.xpath('//*[@id=\"main-nav\"]/div[2]/button/i').click();\ncy.wait(5000);",
+              "err": {
+                "message": "CypressError: Timed out retrying after 10000ms: `cy.trigger()` failed because this element:\n\n`<a class=\"item\" href=\"/calendar\">...</a>`\n\nis being covered by another element:\n\n`<div class=\"ui fluid container custom-dashboard-container card-container\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 10000ms: `cy.trigger()` failed because this element:\n\n`<a class=\"item\" href=\"/calendar\">...</a>`\n\nis being covered by another element:\n\n`<div class=\"ui fluid container custom-dashboard-container card-container\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:162005:78)\n    at ensureDescendents (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:147397:8)\n    at ensureDescendentsAndScroll (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:147404:14)\n    at ensureElIsNotCovered (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:147536:5)\n    at runAllChecks (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:147726:52)\n    at retryActionability (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:147750:16)\n    at tryCatcher (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:13012:23)\n    at Function.Promise.attempt.Promise.try (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:10286:29)\n    at whenStable (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:166931:65)\n    at https://ui.cogmento.com/__cypress/runner/cypress_runner.js:166385:14\n    at tryCatcher (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:13012:23)\n    at Promise._settlePromiseFromHandler (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:10947:31)\n    at Promise._settlePromise (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:11004:18)\n    at Promise._settlePromise0 (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:11049:10)\n    at Promise._settlePromises (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:11129:18)\n    at Promise._fulfill (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:11073:18)\n    at https://ui.cogmento.com/__cypress/runner/cypress_runner.js:12687:46\nFrom Your Spec Code:\n    at Context.eval (https://ui.cogmento.com/__cypress/tests?p=cypress/e2e/cogmentoapp/HomePage.spec.cy.js:167:29)",
+                "diff": null
+              },
+              "uuid": "589acf61-285c-4846-b5bc-5be9cd5c4aec",
+              "parentUUID": "2df57f24-1a42-4f10-9d3f-d887ea86ed5b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ec2fc78b-73fc-49e5-a558-6e38f74322dd",
+            "8f4ae015-f912-47ff-809b-42547df778d1"
+          ],
+          "failures": [
+            "589acf61-285c-4846-b5bc-5be9cd5c4aec"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 43758,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "181f25e7-9a8a-4cca-9962-30b92a7d7691",
+      "title": "",
+      "fullFile": "cypress/e2e/cogmentoapp/Login.spec.cy.js",
+      "file": "cypress/e2e/cogmentoapp/Login.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "25bbdf1b-6ed7-4f71-b70a-722885d72f4c",
+          "title": "Cogmento App",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login Test",
+              "fullTitle": "Cogmento App Login Test",
+              "timedOut": null,
+              "duration": 18859,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "page.loginCogmento();",
+              "err": {},
+              "uuid": "cc04d39e-4418-433a-bde6-e06cbbd7a61c",
+              "parentUUID": "25bbdf1b-6ed7-4f71-b70a-722885d72f4c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cc04d39e-4418-433a-bde6-e06cbbd7a61c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18859,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
